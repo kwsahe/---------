@@ -1,0 +1,15 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "Live Preview",
+			"workspacePath": "c:\\Users\\sangh\\OneDrive\\바탕 화면\\프롬프트, 리눅스",
+			"problemMatcher": [],
+			"label": "Live Preview: Run Server",
+			"group": {
+				"kind": "build",
+				"isDefault": true
+			}
+		}
+	]
+}
