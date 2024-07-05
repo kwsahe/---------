@@ -41,3 +41,65 @@ print(c.dtype)  # float64
 
 ```
 
+## 배열 연산
+```python
+x = np.array([1, 2, 3])
+y = np.array([4, 5, 6])
+
+print(x + y)  # [5 7 9]
+print(x - y)  # [-3 -3 -3]
+print(x * y)  # [ 4 10 18]
+print(x / y)  # [0.25 0.4  0.5 ]
+
+# 브로드캐스팅
+d = np.array([1, 2, 3])
+print(d + 1)  # [2 3 4]
+
+```
+## 유용한 함수들
+```python
+print(np.zeros((2, 3)))  # [[0. 0. 0.]
+                         #  [0. 0. 0.]]
+print(np.ones((2, 3)))   # [[1. 1. 1.]
+                         #  [1. 1. 1.]]
+print(np.eye(3))         # [[1. 0. 0.]
+                         #  [0. 1. 0.]
+                         #  [0. 0. 1.]]
+
+print(np.arange(0, 10, 2))   # [0 2 4 6 8]
+print(np.linspace(0, 1, 5))  # [0.   0.25 0.5  0.75 1.  ]
+
+```
+
+## 배열 인덱싱 및 슬라이싱
+```python
+# 인덱싱
+e = np.array([1, 2, 3, 4, 5])
+print(e[0])  # 1
+print(e[4])  # 5
+
+# 슬라이싱
+print(e[1:3])  # [2 3]
+print(e[:2])   # [1 2]
+print(e[2:])   # [3 4 5]
+
+# 다차원 배열 인덱싱 및 슬라이싱
+f = np.array([[1, 2, 3], [4, 5, 6], [7, 8, 9]])
+print(f[0, 0])  # 1
+print(f[1, :])  # [4 5 6]
+print(f[:, 2])  # [3 6 9]
+```
+
+## 배열 연산 함수
+```python
+print(np.sum(f))    # 45
+print(np.mean(f))   # 5.0
+print(np.max(f))    # 9
+print(np.min(f))    # 1
+
+print(np.sum(f, axis=0))  # [12 15 18]
+print(np.sum(f, axis=1))  # [ 6 15 24]
+
+
+```
+
